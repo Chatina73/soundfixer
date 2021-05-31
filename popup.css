@@ -1,6 +1,7 @@
 body, html {
 	background: rgb(240, 240, 240);
 	color: rgb(60, 60, 60);
+	margin: 0 auto;
 }
 * {
 	font-family: sans-serif;
@@ -8,7 +9,7 @@ body, html {
 }
 
 #elements-pane {
-	width: 360px;
+	max-width: 360px;
 }
 header {
 	display: flex;
@@ -46,11 +47,18 @@ header img {
 	overflow: hidden;
 	max-width: 280px;
 }
+.checkboxes {
+	display: flex;
+	align-items: center;
+}
+.checkboxes label {
+	margin-right: 0.8rem;
+}
 label {
 	display: flex;
 	padding: 0.2rem 0;
 }
-label:first-of-type {
+li > label:first-of-type {
 	margin-top: 0.2rem;
 }
 label span {
@@ -58,7 +66,7 @@ label span {
 	padding: 0 0.3rem;
 }
 label span:first-child {
-	min-width: 13%;
+	min-width: 15%;
 	text-align: right;
 }
 label input:not([type=checkbox]) {
